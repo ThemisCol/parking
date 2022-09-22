@@ -13,10 +13,6 @@ import java.util.List;
  */
 public interface VehicleBrandService {
 
-    public VehicleBrand save(VehicleBrand vehicleBrand);
-
-    public void delete(Integer id);
-
     public VehicleBrand findById(Integer id);
 
     public List<VehicleBrand> findAll();

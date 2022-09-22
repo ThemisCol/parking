@@ -13,10 +13,8 @@ import java.util.List;
  */
 public interface ParkingSlotService {
 
-    public ParkingSlot save(ParkingSlot parkingslot);
-
-    public void delete(Integer id);
-
+    public ParkingSlot save(ParkingSlot parkingSlot);
+    
     public ParkingSlot findById(Integer id);
 
     public List<ParkingSlot> findAll();

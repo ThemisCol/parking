@@ -29,8 +29,4 @@ public class VehicleBrand implements Serializable {
 
     @Column
     private String name;
-
-    @Column
-    private String brand;
-
 }

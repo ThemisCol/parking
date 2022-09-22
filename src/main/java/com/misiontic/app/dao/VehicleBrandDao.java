@@ -4,14 +4,14 @@
  */
 package com.misiontic.app.dao;
 
-import com.misiontic.app.models.User;
+import com.misiontic.app.models.VehicleBrand;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
  * @author cahuc
  */
-public interface VehicleBrandDao extends JpaRepository< User, Integer> {
+public interface VehicleBrandDao extends JpaRepository< VehicleBrand, Integer> {
 
     /*
         La estructura de estas consultas es la siguiente:
@@ -32,7 +32,7 @@ public interface VehicleBrandDao extends JpaRepository< User, Integer> {
             WHERE idUsuario = ? AND clave = ?
       
      */
-        
-    public User findByIdUsuarioAndClave(String idUsuario, String clave);
-
+       /*
+    public User findByIdUsuarioAndClave(String id_user, String password);
+*/
 }
