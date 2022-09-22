@@ -24,8 +24,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(readOnly = false)
-    public User save(User usuario) {
-        return userDao.save(usuario);
+    public User save(User user) {
+        return userDao.save(user);
     }
 
     @Override
@@ -45,10 +45,10 @@ public class UserServiceImpl implements UserService {
     public List<User> findAll() {
         return (List<User>) userDao.findAll();
     }
-
+/*
     @Override
-    public User findByCredentials(String id, String clave) {
-        return userDao.findByIdUsuarioAndClave(id, clave);
+    public User findByCredentials(String id, String password) {
+        return userDao.findByIdUsuarioAndClave(id, password);
     }
-
+*/
 }

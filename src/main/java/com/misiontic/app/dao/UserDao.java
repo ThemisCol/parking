@@ -32,7 +32,7 @@ public interface UserDao extends JpaRepository< User, Integer> {
             WHERE idUsuario = ? AND clave = ?
       
      */
-        
-    public User findByIdUsuarioAndClave(String idUsuario, String clave);
-
+       /*
+    public User findByIdUsuarioAndClave(String id_user, String password);
+*/
 }

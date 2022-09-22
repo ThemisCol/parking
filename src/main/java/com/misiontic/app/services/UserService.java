@@ -21,6 +21,6 @@ public interface UserService {
 
     public List<User> findAll();
 
-    public User findByCredentials(String idUsuario, String clave);
+   // public User findByCredentials(String id_user, String password);
 
 }
